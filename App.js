@@ -1,14 +1,27 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
 import RootNavigator from './src/Navigation';
+import { Amplify } from "aws-amplify";
+import config from "./src/aws-exports";
+import { withAuthenticator } from "aws-amplify-react-native";
+import { LogBox } from 'react-native';
 
-export default function App() {
+Amplify.configure({
+  ...config,
+  Analytics: {
+    disabled: true
+  }
+});
+
+LogBox.ignoreAllLogs();
+
+function App() {
   return (
     <NavigationContainer>
       <RootNavigator />      
       <StatusBar style="light" />
     </NavigationContainer>
-    
   );
 };
+
+export default withAuthenticator(App);

@@ -9,7 +9,7 @@ import BasketDishItem from '../../components/BasketDishItem';
 
 const order = orders[0];
 
-const OrderDetailsHeader = () => {
+const OrderDetailsHeader = ({ order }) => {
   return (
     <View>
       <View style={styles.page}>

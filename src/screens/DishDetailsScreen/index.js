@@ -42,11 +42,23 @@ const DishDetailsScreen = () => {
             <Text style={styles.name}>{dish.name}</Text>
             <Text style={styles.description}>{dish.description}</Text>
             <View style={styles.separator} />
+
             <View style={styles.row}>
-                <AntDesign name="minuscircleo" size={30} color={"black"} onPress={onMinus} />
+                <AntDesign 
+                name="minuscircleo" 
+                size={30} 
+                color={"black"} 
+                onPress={onMinus} 
+                />
                 <Text style={styles.quantity}>{quantity}</Text>
-                <AntDesign name="pluscircleo" size={30} color={"black"} onPress={onPlus}/>
+                <AntDesign 
+                name="pluscircleo" 
+                size={30} 
+                color={"black"} 
+                onPress={onPlus}
+                />
             </View>
+            
             <Pressable 
             onPress={() => navigation.navigate("Basket")} 
             style={styles.button}

@@ -1,15 +1,15 @@
 {
   "staging": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-eathub-staging-172134-authRole",
-      "UnauthRoleArn": "arn:aws:iam::495215112334:role/amplify-eathub-staging-172134-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::495215112334:role/amplify-eathub-staging-172134-authRole",
+      "AuthRoleName": "amplify-eathub-staging-44231-authRole",
+      "UnauthRoleArn": "arn:aws:iam::495215112334:role/amplify-eathub-staging-44231-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::495215112334:role/amplify-eathub-staging-44231-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-eathub-staging-172134-deployment",
-      "UnauthRoleName": "amplify-eathub-staging-172134-unauthRole",
-      "StackName": "amplify-eathub-staging-172134",
-      "StackId": "arn:aws:cloudformation:us-east-1:495215112334:stack/amplify-eathub-staging-172134/196a7b50-f3e2-11ec-8e45-0e78e39201b3",
-      "AmplifyAppId": "dv7v63b6epx3q"
+      "DeploymentBucketName": "amplify-eathub-staging-44231-deployment",
+      "UnauthRoleName": "amplify-eathub-staging-44231-unauthRole",
+      "StackName": "amplify-eathub-staging-44231",
+      "StackId": "arn:aws:cloudformation:us-east-1:495215112334:stack/amplify-eathub-staging-44231/645f5490-f50a-11ec-b5db-1296f2d3ba85",
+      "AmplifyAppId": "d3c6frxkfqcgru"
     },
     "categories": {
       "auth": {

@@ -7,13 +7,18 @@ const restaurant = restaurants[0];
 const BasketScreen = () => {
     return (
         <View style={styles.page}>
-            <Text style={styles.name}>{restaurant.name}</Text>
-            <Text style={{ fontWeight: 'bold', marginTop: 20, fontSize: 19}}>Your Items</Text>
+            <Text style={styles.name}>{restaurant?.name}</Text>
+            <Text style={{ fontWeight: 'bold', marginTop: 20, fontSize: 19}}>
+                Your Items
+            </Text>
 
             <FlatList
             data={restaurant.dishes} 
-            renderItem ={({item}) => <BasketDishItem basketDish ={item} />} />
+            renderItem ={({item}) => <BasketDishItem basketDish ={item} />} 
+            />
+
             <View style={styles.separator} />
+            
             <View style={styles.button}>
                 <Text style={styles.buttonText}>Create order</Text>
             </View>
